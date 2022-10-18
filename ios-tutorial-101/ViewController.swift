@@ -13,6 +13,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onClickRedirectToB(_ sender: Any) {
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let bViewController = storyboard.instantiateViewController(withIdentifier: "BViewController") as! BViewController
+            self.navigationController?.pushViewController(bViewController, animated: true)
+        }
 
 
 }

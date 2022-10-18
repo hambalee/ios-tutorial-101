@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click B"/>
                                 <connections>
-                                    <segue destination="3dh-9C-R86" kind="show" id="5CO-iq-YX7"/>
+                                    <action selector="onClickRedirectToB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7N-XK-L9m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,35 +37,59 @@
         <!--View Controller-->
         <scene sceneID="Y8i-OY-L7o">
             <objects>
-                <viewController id="3dh-9C-R86" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BViewController" id="3dh-9C-R86" customClass="BViewController" customModule="ios_tutorial_101" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sKp-rG-imI">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EWE-Vy-QyN">
-                                <rect key="frame" x="75" y="329" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-Gj-Mhc">
+                                <rect key="frame" x="24" y="405" width="342" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NaI-2C-Bjq">
+                                <rect key="frame" x="24" y="463" width="342" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B7-gE-qN8">
+                                <rect key="frame" x="158" y="521" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="9zE-4h-s1Y">
+                                <rect key="frame" x="145" y="205" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ezM-Ri-ROC"/>
+                                    <constraint firstAttribute="width" constant="100" id="inf-iw-Wyl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hoe-Y4-oyW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iNK-Gj-Mhc" firstAttribute="top" secondItem="9zE-4h-s1Y" secondAttribute="bottom" constant="100" id="70Z-mz-116"/>
+                            <constraint firstItem="9zE-4h-s1Y" firstAttribute="leading" secondItem="hoe-Y4-oyW" secondAttribute="leading" constant="145" id="8I7-Ov-Yxd"/>
+                            <constraint firstItem="NaI-2C-Bjq" firstAttribute="top" secondItem="iNK-Gj-Mhc" secondAttribute="bottom" constant="24" id="Bl8-Vy-eev"/>
+                            <constraint firstItem="hoe-Y4-oyW" firstAttribute="trailing" secondItem="iNK-Gj-Mhc" secondAttribute="trailing" constant="24" id="JdM-eM-85S"/>
+                            <constraint firstItem="hoe-Y4-oyW" firstAttribute="trailing" secondItem="NaI-2C-Bjq" secondAttribute="trailing" constant="24" id="WhJ-U1-bWA"/>
+                            <constraint firstItem="iNK-Gj-Mhc" firstAttribute="centerY" secondItem="sKp-rG-imI" secondAttribute="centerY" id="ajP-20-DHY"/>
+                            <constraint firstItem="NaI-2C-Bjq" firstAttribute="leading" secondItem="hoe-Y4-oyW" secondAttribute="leading" constant="24" id="gre-7R-51e"/>
+                            <constraint firstItem="iNK-Gj-Mhc" firstAttribute="centerX" secondItem="sKp-rG-imI" secondAttribute="centerX" id="k6b-Hv-k6a"/>
+                            <constraint firstItem="5B7-gE-qN8" firstAttribute="top" secondItem="NaI-2C-Bjq" secondAttribute="bottom" constant="24" id="mxA-Ex-6qE"/>
+                            <constraint firstItem="iNK-Gj-Mhc" firstAttribute="leading" secondItem="hoe-Y4-oyW" secondAttribute="leading" constant="24" id="of0-mx-zO1"/>
+                            <constraint firstItem="hoe-Y4-oyW" firstAttribute="trailing" secondItem="9zE-4h-s1Y" secondAttribute="trailing" constant="145" id="xto-eM-383"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zOJ-mr-tLC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffs-c5-Nli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="4"/>
+            <point key="canvasLocation" x="881.53846153846155" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="twitter" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

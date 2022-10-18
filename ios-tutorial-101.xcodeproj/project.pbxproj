@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80A755B928FEA4DD0023DE2C /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A755B828FEA4DD0023DE2C /* BViewController.swift */; };
 		80A8819528FE94F200BA0437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8819428FE94F200BA0437 /* AppDelegate.swift */; };
 		80A8819728FE94F200BA0437 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8819628FE94F200BA0437 /* SceneDelegate.swift */; };
 		80A8819928FE94F200BA0437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8819828FE94F200BA0437 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80A755B828FEA4DD0023DE2C /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 		80A8819128FE94F200BA0437 /* ios-tutorial-101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-tutorial-101.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A8819428FE94F200BA0437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A8819628FE94F200BA0437 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				80A8819D28FE94F300BA0437 /* Assets.xcassets */,
 				80A8819F28FE94F300BA0437 /* LaunchScreen.storyboard */,
 				80A881A228FE94F300BA0437 /* Info.plist */,
+				80A755B828FEA4DD0023DE2C /* BViewController.swift */,
 			);
 			path = "ios-tutorial-101";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A8819928FE94F200BA0437 /* ViewController.swift in Sources */,
+				80A755B928FEA4DD0023DE2C /* BViewController.swift in Sources */,
 				80A8819528FE94F200BA0437 /* AppDelegate.swift in Sources */,
 				80A8819728FE94F200BA0437 /* SceneDelegate.swift in Sources */,
 			);
