@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N34-Jh-dfP">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -16,23 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0R-Mc-XEa">
-                                <rect key="frame" x="157" y="405" width="77" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uz-9m-tk4">
+                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click B"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="onClickRedirectToB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7N-XK-L9m"/>
+                                    <action selector="onClickRedirectToB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Db-nx-EfY"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6uz-9m-tk4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hc2-GX-Wor"/>
+                            <constraint firstItem="6uz-9m-tk4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eGe-XI-LfI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="H3S-if-BKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="4"/>
+            <point key="canvasLocation" x="1030.7692307692307" y="3.5545023696682461"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y8i-OY-L7o">
@@ -52,8 +56,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B7-gE-qN8">
-                                <rect key="frame" x="158" y="521" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B7-gE-qN8">
+                                <rect key="frame" x="162.33333333333334" y="521" width="65.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                             </button>
@@ -75,9 +79,11 @@
                             <constraint firstItem="hoe-Y4-oyW" firstAttribute="trailing" secondItem="NaI-2C-Bjq" secondAttribute="trailing" constant="24" id="WhJ-U1-bWA"/>
                             <constraint firstItem="iNK-Gj-Mhc" firstAttribute="centerY" secondItem="sKp-rG-imI" secondAttribute="centerY" id="ajP-20-DHY"/>
                             <constraint firstItem="NaI-2C-Bjq" firstAttribute="leading" secondItem="hoe-Y4-oyW" secondAttribute="leading" constant="24" id="gre-7R-51e"/>
+                            <constraint firstItem="5B7-gE-qN8" firstAttribute="top" secondItem="NaI-2C-Bjq" secondAttribute="bottom" constant="24" id="iD8-Vk-bA6"/>
                             <constraint firstItem="iNK-Gj-Mhc" firstAttribute="centerX" secondItem="sKp-rG-imI" secondAttribute="centerX" id="k6b-Hv-k6a"/>
                             <constraint firstItem="5B7-gE-qN8" firstAttribute="top" secondItem="NaI-2C-Bjq" secondAttribute="bottom" constant="24" id="mxA-Ex-6qE"/>
                             <constraint firstItem="iNK-Gj-Mhc" firstAttribute="leading" secondItem="hoe-Y4-oyW" secondAttribute="leading" constant="24" id="of0-mx-zO1"/>
+                            <constraint firstItem="5B7-gE-qN8" firstAttribute="centerX" secondItem="sKp-rG-imI" secondAttribute="centerX" id="s1V-mu-Z1d"/>
                             <constraint firstItem="hoe-Y4-oyW" firstAttribute="trailing" secondItem="9zE-4h-s1Y" secondAttribute="trailing" constant="145" id="xto-eM-383"/>
                         </constraints>
                     </view>
@@ -85,7 +91,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ffs-c5-Nli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881.53846153846155" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="1810.7692307692307" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IXY-LO-pcP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N34-Jh-dfP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g7Z-Pc-tLe">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mt4-WV-brD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGk-Af-jUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>
